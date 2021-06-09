@@ -1,0 +1,59 @@
+@font-face {
+    font-family: Helvetica Neue;
+    src: url(../fonts/HelveticaNeue.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter-Regular.ttf);
+}
+
+/* header navbar */
+
+.navbar-fixed-top.scrolled {
+    background-color: #555 !important;
+    transition: background-color 400ms linear;
+}
+
+.navbar-fixed-top.scrolled .nav-link {
+    color:#555;
+}
+
+
+.banner{
+    background-image: url(../images/header_banner.jpg);
+    height: auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+}
+
+.banner_content_menu{
+    border-radius: 10px;
+    padding: 20px 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgb(0 117 255 / 9%);
+    position: relative;
+    top: 25%;
+}
+
+.banner_content_box{
+    border-radius: 20px;
+    padding: 50px 30px 40px;
+    background-color: #fff;
+}
+
+.banner_content_btn{
+    position: relative;
+    bottom: 50%;
+}
+
+.search_btn{
+    background-color: #ff6347;
+    padding: 10px;
+    border: 2px solid #ff6347;
+    border-radius: 10px;
+    width: 150px;
+    color: #fff;
+}
