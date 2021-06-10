@@ -182,28 +182,24 @@
                     <!-- operator select -->
                     <div class="col-md-3 d-flex justify-content-md-around align-items-center p-3 common_dashed_border">
                         <div class="container">
-                            <div class="form-floating">
-                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                  <option selected>Operator</option>
-                                  <option value="1">
-                                      <input type="checkbox" id="busOne">
-                                      <label for="busOne">Shamoly</label>
-                                  </option>
-                                  <option value="2">
-                                      <input type="checkbox" id="busTwo">
-                                      <label for="busTwo">Ena</label>
-                                  </option>
-                                  <option value="3">
-                                      <input type="checkbox" id="busThree">
-                                      <label for="busThree">Green Line</label>
-                                  </option>
-                                  <option value="4">
-                                      <input type="checkbox" id="busFour">
-                                      <label for="busFour">SaintMartin</label>
-                                  </option>
-                                </select>
-                                <label for="floatingSelect">Select Your Bus Name</label>
-                            </div>
+                            <form>
+                                <div class="multiselect">
+                                    <div class="selectBox" onclick="showCheckboxes()">
+                                        <select>
+                                            <option>Select an option</option>
+                                        </select>
+                                        <div class="overSelect"></div>
+                                    </div>
+                                    <div id="checkboxes">
+                                        <label for="one">
+                                            <input type="checkbox" id="one" />First checkbox</label>
+                                        <label for="two">
+                                            <input type="checkbox" id="two" />Second checkbox</label>
+                                        <label for="three">
+                                            <input type="checkbox" id="three" />Third checkbox</label>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
