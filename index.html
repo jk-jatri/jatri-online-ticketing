@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/font.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/priceRange.css">
 
         <!-- Font Awesome link -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
@@ -98,12 +99,123 @@
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
 
-        <!-- javascript and jquery -->
-        <script src="js/app.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Filter Section Start -->
+
+        <section class="pt-5">
+            <div class="container">
+                <div class="row w-100 border rounded-3">
+
+                    <!-- Ac/Non-Ac Type -->
+                    <div class="col-md-3 d-flex justify-content-md-around align-items-center p-3 common_dashed_border">
+                        <div>
+                            <i class="fas fa-sliders-h"></i> <span class="b-block d-md-none bold">Filter</span>
+                        </div>
+                        <div>
+                            <form>
+                                <input type="checkbox" name="ac_type" class="custom_input1" id="type_ac" hidden>
+                                <label for="type_ac" class="custom_label1">
+                                    <i class="fas fa-fan"></i> <br>
+                                    <span class="label_text">Ac</span>
+                                </label>
+    
+                                <input type="checkbox" name="non-ac_type" class="custom_input2" id="type_nonac" hidden>
+                                <label for="type_nonac" class="custom_label2">
+                                    <i class="fas fa-fan"></i> <br>
+                                    <span class="label_text">Non-Ac</span>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Price Range -->
+                    <div class="col-md-3 d-flex justify-content-md-around align-items-center p-3 common_dashed_border">
+                        <div class="container">
+                            <div class="range-slider">
+                                <input value="1000" min="0" max="3500" step="100" type="range">
+                                <input value="500" min="0" max="3500" step="100" type="range">
+                                <svg width="100%">
+                                    <line x1="4" y1="0" x2="480" y2="0"></line>
+                                </svg>
+                                
+                                <div class="d-flex justify-content-between align-items-center pt-3">
+                                    <p>BDT: <span class="numbers">500</span></p>
+                                    <p>BDT: <span class="numbers">1000</span></p>
+                                </div>
+                                <!-- <span>from <input type="number" value="25000" min="0" max="100000" step="500"> to <input type="number" value="75000" min="0" max="100000" step="500"></span> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Time Select -->
+                    <div class="col-md-3 d-flex justify-content-md-around align-items-center p-3 common_dashed_border">
+                        <div class="container">
+                            <form>
+                                <input type="checkbox" name="morning" class="custom_input3" id="morning" hidden>
+                                <label for="morning" class="custom_label3">
+                                    <i class="fas fa-sun"></i> <br>
+                                    <span class="label_text">00-06</span>
+                                </label>
+    
+                                <input type="checkbox" name="noon" class="custom_input4" id="noon" hidden>
+                                <label for="noon" class="custom_label4">
+                                    <i class="far fa-sun"></i> <br>
+                                    <span class="label_text">06-12</span>
+                                </label>
+
+                                <input type="checkbox" name="evening" class="custom_input5" id="evening" hidden>
+                                <label for="evening" class="custom_label5">
+                                    <i class="fas fa-moon"></i> <br>
+                                    <span class="label_text">12-18</span>
+                                </label>
+    
+                                <input type="checkbox" name="night" class="custom_input6" id="night" hidden>
+                                <label for="night" class="custom_label6">
+                                    <i class="far fa-star"></i> <br>
+                                    <span class="label_text">18-00</span>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- operator select -->
+                    <div class="col-md-3 d-flex justify-content-md-around align-items-center p-3 common_dashed_border">
+                        <div class="container">
+                            <div class="form-floating">
+                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                  <option selected>Operator</option>
+                                  <option value="1">
+                                      <input type="checkbox" id="busOne">
+                                      <label for="busOne">Shamoly</label>
+                                  </option>
+                                  <option value="2">
+                                      <input type="checkbox" id="busTwo">
+                                      <label for="busTwo">Ena</label>
+                                  </option>
+                                  <option value="3">
+                                      <input type="checkbox" id="busThree">
+                                      <label for="busThree">Green Line</label>
+                                  </option>
+                                  <option value="4">
+                                      <input type="checkbox" id="busFour">
+                                      <label for="busFour">SaintMartin</label>
+                                  </option>
+                                </select>
+                                <label for="floatingSelect">Select Your Bus Name</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </body>
+            <!-- javascript and jquery -->
+            <script src="js/app.js"></script>
+            <script src="js/priceRange.js"></script>
+            <script src="js/bootstrap.bundle.min.js"></script>
+            <script src="js/owl.carousel.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </html>
