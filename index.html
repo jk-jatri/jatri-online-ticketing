@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="css/font.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/priceRange.css">
+        <link rel="stylesheet" href="css/multiselect.css">
 
         <!-- Font Awesome link -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
@@ -133,15 +134,15 @@
                     <div class="col-md-3 d-flex justify-content-md-around align-items-center p-3 common_dashed_border">
                         <div class="container">
                             <div class="range-slider">
-                                <input value="1000" min="0" max="3500" step="100" type="range">
-                                <input value="500" min="0" max="3500" step="100" type="range">
+                                <input value="3000" min="500" max="3500" step="100" type="range">
+                                <input value="1000" min="500" max="3500" step="100" type="range">
                                 <svg width="100%">
                                     <line x1="4" y1="0" x2="480" y2="0"></line>
                                 </svg>
                                 
                                 <div class="d-flex justify-content-between align-items-center pt-3">
-                                    <p>BDT: <span class="numbers">500</span></p>
                                     <p>BDT: <span class="numbers">1000</span></p>
+                                    <p>BDT: <span class="numbers">3000</span></p>
                                 </div>
                                 <!-- <span>from <input type="number" value="25000" min="0" max="100000" step="500"> to <input type="number" value="75000" min="0" max="100000" step="500"></span> -->
                             </div>
@@ -184,22 +185,82 @@
                         <div class="container">
                             <form>
                                 <div class="multiselect">
-                                    <div class="selectBox" onclick="showCheckboxes()">
-                                        <select>
-                                            <option>Select an option</option>
-                                        </select>
-                                        <div class="overSelect"></div>
-                                    </div>
-                                    <div id="checkboxes">
-                                        <label for="one">
-                                            <input type="checkbox" id="one" />First checkbox</label>
-                                        <label for="two">
-                                            <input type="checkbox" id="two" />Second checkbox</label>
-                                        <label for="three">
-                                            <input type="checkbox" id="three" />Third checkbox</label>
-                                    </div>
+                                    <select id='testSelect1' placeholder="operator" multiple>
+                                        <option value='0' selected>Operator</option>
+                                        <option value='1'>Item 1</option>
+                                        <option value='2'>Item 2</option>
+                                        <option value='3'>Item 3</option>
+                                        <option value='4'>Item 4</option>
+                                        <option value='5'>Item 5</option>
+                                    </select>
                                 </div>
                             </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row w-100 mt-4">
+                    <div class="col-md-9 border shadow bg-light rounded-3">
+                        <div class="row ticket_detail">
+                            <div class="col-md-3 common_dashed_border">
+                                <div class="py-2">
+                                    <h4>Shyamoli NR Travels</h4>
+                                    <p class="small">151-CTG</p>
+                                </div>
+                            </div>
+                            <div class="col-md-5 common_dashed_border">
+                                <div class="py-2  d-flex justify-content-between align-items-center ">
+                                    <div class="">
+                                        <h4>5:30 AM</h4>
+                                        <p class="small">Gabtoli 06 No. Counter</p>
+                                    </div>
+                                    <div class="time_required">
+                                        <p class="small time">5h 50min</p>
+                                    </div>
+                                    <div class="">
+                                        <h4>10:45 AM</h4>
+                                        <p class="small">Dampara Counter</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 common_dashed_border">
+                                <div class="py-2">
+                                    <h3><i class="fas fa-fan"></i> &nbsp; <span>Ac</span></h3>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="ticket_price py-2">
+                                    <h4>BDT <span>750</span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="accordion accordion-flush p-0" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <div class="row d-flex justify-content-between align-items-center">
+                                        <div class="col-md-9">
+                                            <div class="d-flex justify-content-between align-items-center ps-2">
+                                                <p><a href="#">Cancellation Policy</a></p>
+                                                <p>18 seats Left</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h2 class="accordion-header" id="flush-headingOne">
+                                                <button class="accordion-button collapsed custom_accordion_btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                    View Seat
+                                                </button>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <div class="border shadow bg-dark rounded-3">
+                           
                         </div>
                     </div>
                 </div>
@@ -208,10 +269,21 @@
 
 
     </body>
-            <!-- javascript and jquery -->
-            <script src="js/app.js"></script>
-            <script src="js/priceRange.js"></script>
-            <script src="js/bootstrap.bundle.min.js"></script>
-            <script src="js/owl.carousel.min.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- javascript and jquery -->
+    <script src="js/app.js"></script>
+    <script src="js/priceRange.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/multiselect.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        document.multiselect('#testSelect1')
+		.setCheckBoxClick("checkboxAll", function(target, args) {
+			console.log("Checkbox 'Select All' was clicked and got value ", args.checked);
+		})
+		.setCheckBoxClick("1", function(target, args) {
+			console.log("Checkbox for item with value '1' was clicked and got value ", args.checked);
+		});
+    </script>
 </html>
