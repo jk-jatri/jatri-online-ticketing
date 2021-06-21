@@ -172,6 +172,12 @@
     position: absolute;
 }
 
+/* Ticket Section start */
+.single_vehicle{
+    margin-bottom: 10px;
+    padding: 0px 12px;
+}
+
 .ticket_detail{
     height: 120px;
     border-bottom: 1px solid #ddd;
@@ -180,6 +186,7 @@
 .custom_accordion_btn{
     background-color: #ff6347 !important;
     color: #fff !important;
+    border-radius: 0 0 5px 0 !important;
 }
 
 .custom_accordion_btn:focus{
@@ -188,8 +195,35 @@
     box-shadow: none !important;
 }
 
+/* .custom_accordion_btn:before, */
+.custom_accordion_btn:after{
+    filter: invert(100);
+}
 
+/* Bus Orientation Design Start */
 
+.bus_orientation{
+    border-radius: 15px 5px 5px 15px;
+}
+
+.bus_head{
+    border-right: 1px dashed #ddd;
+    height: 175px;
+}
+
+.bus_body{
+    height: 175px;
+}
+
+.bus_seat{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 3px 7px;
+    height: 30px;
+    background-color: #fff;
+    margin: 5px 0;
+    font-size: 14px;
+}
 
 .help_section_header{
     background-image: linear-gradient( 90deg ,#ff6347,#ff63477d);

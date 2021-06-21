@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 28" width="47" height="28">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-216 -2009L1224 -2009L1224 1028L-216 1028Z" />
+		</clipPath>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="23.112" y1="10.78" x2="23.112" y2="12.425">
+			<stop offset="0" stop-color="#1c3c6b"  />
+			<stop offset="1" stop-color="#1c3c6b"  />
+		</linearGradient>
+		<linearGradient id="grd2" gradientUnits="userSpaceOnUse"  x1="23.111" y1="12.568" x2="23.111" y2="16.258">
+			<stop offset="0" stop-color="#a7a9ac"  />
+			<stop offset="1" stop-color="#6d6e71"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: url(#grd1) }
+		.shp1 { fill: none;stroke: #1c3c6b }
+		.shp2 { opacity: 0.271;fill: url(#grd2) }
+	</style>
+	<g id="Bus Design 02" clip-path="url(#cp1)">
+		<g id="Group 357">
+			<g id="Select Seats">
+				<g id="Stand">
+					<path id="Path 294" class="shp0" d="M8.21 12.42L8.53 10.74L37.35 10.74L38.01 12.42L8.21 12.42Z" />
+					<path id="Rectangle 200" class="shp1" d="M10 0L36 0C37.11 0 38 0.89 38 2L38 26C38 27.11 37.11 28 36 28L10 28C8.89 28 8 27.11 8 26L8 2C8 0.89 8.89 0 10 0Z" />
+					<path id="Rectangle 201" class="shp2" d="M8.21 12.42L38.01 12.42L38.01 16.34L8.21 16.34L8.21 12.42Z" />
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>
