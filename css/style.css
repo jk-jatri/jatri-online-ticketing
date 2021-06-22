@@ -157,6 +157,16 @@
     border: 0 !important;
 }
 
+/* Vehicle List Section Start */
+.vehicle_heading{
+    font-size: 18px;
+}
+
+.single_vehicle{
+    margin-bottom: 10px;
+    padding: 0px 12px;
+}
+
 .time_required p{
     border-bottom: 1px dashed #ddd;
 }
@@ -172,21 +182,15 @@
     position: absolute;
 }
 
-/* Ticket Section start */
-.single_vehicle{
-    margin-bottom: 10px;
-    padding: 0px 12px;
-}
-
 .ticket_detail{
-    height: 120px;
+    height: 85px;
     border-bottom: 1px solid #ddd;
 }
 
 .custom_accordion_btn{
     background-color: #ff6347 !important;
     color: #fff !important;
-    border-radius: 0 0 5px 0 !important;
+    /* border-radius: 0 0 5px 0 !important; */
 }
 
 .custom_accordion_btn:focus{
@@ -200,30 +204,45 @@
     filter: invert(100);
 }
 
-/* Bus Orientation Design Start */
-
+/* Bus Orientation Start */
 .bus_orientation{
-    border-radius: 15px 5px 5px 15px;
+    border-radius: 25px 10px 10px 25px;
+    border: 2px solid #ff6347;
 }
 
 .bus_head{
     border-right: 1px dashed #ddd;
-    height: 175px;
+    height: 200px;
+    padding: 5px 15px 0 5px;
 }
 
 .bus_body{
-    height: 175px;
+    height: 200px;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.seat_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .bus_seat{
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 3px 7px;
-    height: 30px;
     background-color: #fff;
     margin: 5px 0;
     font-size: 14px;
 }
+
+.hidden_seat{
+    height: 30px;
+    width: 30px;
+}
+
+/* Help section design Start */
 
 .help_section_header{
     background-image: linear-gradient( 90deg ,#ff6347,#ff63477d);
