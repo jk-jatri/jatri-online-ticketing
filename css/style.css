@@ -242,6 +242,14 @@
     width: 30px;
 }
 
+.confirm_btn{
+    background-color: #ff6347;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
 /* Help section design Start */
 
 .help_section_header{
