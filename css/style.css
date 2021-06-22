@@ -205,9 +205,53 @@
 }
 
 /* Bus Orientation Start */
+.seat_info{
+    margin-bottom: 20px;
+}
+.available{
+    height: 10px;
+    width: 10px;
+    border: 1px solid #ddd;
+    float: left;
+
+}
+
+.availability_check{
+    float: left;
+    margin-right: 5px;
+    width: fit-content;
+}
+
+/* .availability_check:last-child{
+    float: none !important;
+} */
+
+.not_available{
+    height: 10px;
+    width: 10px;
+    border: 1px solid #ddd;
+    background: #ff63478a;
+    float: left;
+}
+
+.selected_seat{
+    height: 10px;
+    width: 10px;
+    border: 1px solid #ddd;
+    background: #ff6347;
+    float: left;
+}
+
+.availability_check p{
+    color: #000;
+    font-size: 14px;
+    margin: -6px 14px;
+}
+
 .bus_orientation{
     border-radius: 25px 10px 10px 25px;
     border: 2px solid #ff6347;
+    clear: both;
 }
 
 .bus_head{
