@@ -69,7 +69,8 @@
 .custom_label3,
 .custom_label4,
 .custom_label5,
-.custom_label6{
+.custom_label6,
+.custom_label7{
     border: 1px solid #ddd;
     border-radius: 7px;
     background-color: #fff;
@@ -83,7 +84,8 @@
 .custom_label3:hover,
 .custom_label4:hover,
 .custom_label5:hover,
-.custom_label6:hover{
+.custom_label6:hover,
+.custom_label7:hover{
     background-color: #ff6347;
     color: #fff;
     cursor: pointer;
@@ -95,7 +97,8 @@
 .custom_input3:checked ~ .custom_label3,
 .custom_input4:checked ~ .custom_label4,
 .custom_input5:checked ~ .custom_label5,
-.custom_input6:checked ~ .custom_label6{
+.custom_input6:checked ~ .custom_label6,
+.custom_input7:checked ~ .custom_label7{
     background-color: #ff6347;
     color: #fff;
 }

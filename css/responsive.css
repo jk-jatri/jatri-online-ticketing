@@ -29,7 +29,16 @@
 /* ============== Large Device ============== */
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-    
+    .custom_label1, 
+    .custom_label2, 
+    .custom_label3, 
+    .custom_label4, 
+    .custom_label5, 
+    .custom_label6, 
+    .custom_label7 {
+        font-size: 12px;
+        width: 47px;
+    }
 }
 
 
