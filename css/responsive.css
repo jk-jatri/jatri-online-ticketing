@@ -21,6 +21,25 @@
     .help_text{
         font-size: 12px !important;
     }
+
+    .bus_orientation {
+        border-radius: 15px 6px 6px 15px;
+    }
+
+    .bus_body {
+        padding: 2px 7px;
+    }
+    .seat_column {
+        margin-right: -2px;
+    }
+
+    .bus_seat {
+        border-radius: 4px;
+        padding: 4px 6px;
+        margin: 5px 0 5px -4px;
+        font-size: 9px;
+        width: 25px;
+    }
 }
 
 

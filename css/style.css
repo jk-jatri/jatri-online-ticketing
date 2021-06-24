@@ -258,12 +258,12 @@
 
 .bus_head{
     border-right: 1px dashed #ddd;
-    height: 200px;
+    /* height: 200px; */
     padding: 5px 15px 0 5px;
 }
 
 .bus_body{
-    height: 200px;
+    /* height: 200px; */
     width: 100%;
     padding: 5px 10px;
 }
