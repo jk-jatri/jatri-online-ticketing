@@ -174,19 +174,18 @@
     border-bottom: 1px dashed #ddd;
 }
 
-.time_required p::before,
-.time_required p::after{
+.time_required::before,
+.time_required::after{
     border: 1px solid #000 !important;
     width: 5px !important;
     height: 5px !important;
     background-color: #000;
-    top: 80% !important;
+    /* top: 80% !important; */
     z-index: 99999999999;
     position: absolute;
 }
 
 .ticket_detail{
-    height: 85px;
     border-bottom: 1px solid #ddd;
 }
 
