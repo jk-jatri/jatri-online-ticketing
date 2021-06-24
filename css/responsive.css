@@ -4,6 +4,9 @@
     .common_dashed_border{
         border-right: none;
     }
+    .vehicle_heading{
+        font-size: 16px;
+    }
 }
 
 
@@ -12,6 +15,9 @@
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .common_dashed_border{
         border-right: none;
+    }
+    .vehicle_heading{
+        font-size: 16px;
     }
 }
 
