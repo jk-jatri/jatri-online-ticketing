@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jatri online Ticketing</title>
+
+        <!-- fabicon -->
+        <link rel="icon" href="images/logo.png" type="image/gif">
+
+        <!-- css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/font.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/priceRange.css">
+        <link rel="stylesheet" href="css/multiselect.css">
+
+        <!-- Font Awesome link -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+        <script src="https://kit.fontawesome.com/48359289d4.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <main class="mt-2">
+            <div class="container">
+                <div class="d-flex justify-content-center align-items-center login_panel">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-10">
+                        <div class="login_logo my-4">
+                            <img src="images/logo.png" alt="" class="img-responsive m-auto d-block">
+                        </div>
+
+                        <div class="shadow login_area px-4 pt-4 pb-3">
+                            <h2 class="text-center">Log In</h2>
+                                <label for="phone" class="label_font">Phone Number</label>
+                                <input id="phone" class="input_field form-control rounded py-2 px-3 w-100 mt-1 mb-4" type="text" placeholder="01XXXXXXXXX">
+
+
+                                <label for="password" class="label_font">Password</label>
+                                <input id="password_text" type="password" class="input_field form-control rounded py-2 px-3 w-100 mt-1 mb-4" placeholder="Enter Password" name="password" autocomplete="new-password">
+                                <span toggle="#password_text" class="fa fa-fw fa-eye-slash field-icon toggle-password"></span>
+
+                                <button type="submit" class="login_btn rounded-pill text-white w-100 mt-3 py-2"  onclick="location.href='index.html'">LOG IN</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+
+    <script>
+        $(".toggle-password").click(function () {
+            $(this).toggleClass("fa-eye-slash fa-eye");
+            var input = $($(this).attr("toggle"));
+            if (input.attr("type") == "password") {
+                input.attr("type", "text");
+            } else {
+                input.attr("type", "password");
+            }
+        });
+    </script>
+
+</html>

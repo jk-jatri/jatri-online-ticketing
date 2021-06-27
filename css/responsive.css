@@ -26,8 +26,15 @@
         border-radius: 15px 6px 6px 15px;
     }
 
+    .bus_head{
+        position: absolute;
+        visibility:hidden;
+        display: none !important;
+    }
+
     .bus_body {
         padding: 2px 7px;
+        height: 170px;
     }
     .seat_column {
         margin-right: -2px;
