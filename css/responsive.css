@@ -47,6 +47,17 @@
         font-size: 9px;
         width: 25px;
     }
+
+    .time_select{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .bus_operator_select,
+    .multiselect-input{
+        background-color: #ffe6e1 !important;
+    }
 }
 
 

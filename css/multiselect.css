@@ -61,39 +61,39 @@
 	overflow-x: hidden;
 }
 
-	.multiselect-wrapper ul li {
-		padding-right: 20px;
-		display: block;
-	}
+.multiselect-wrapper ul li {
+	padding-right: 20px;
+	display: block;
+}
 
-		.multiselect-wrapper ul li.active {
-			background-color: rgb(0, 102, 255);
-			color: white;
-		}
+.multiselect-wrapper ul li.active {
+	background-color: rgb(0, 102, 255);
+	color: white;
+}
 
-		.multiselect-wrapper ul li:hover {
-			background-color: rgb(0, 102, 255);
-			color: white;
-		}
+.multiselect-wrapper ul li:hover {
+	background-color: rgb(0, 102, 255);
+	color: white;
+}
 
 .multiselect-input-div {
 	height: 34px;
 }
 
-	.multiselect-input-div input{
-		border: 1px solid #ababab;
-		background : #fff;
-		margin: 5px 0 6px 0;
-		padding: 5px;
-		vertical-align:middle;
-	}
+.multiselect-input-div input{
+	border: 1px solid #ababab;
+	background : #fff;
+	margin: 5px 0 6px 0;
+	padding: 5px;
+	vertical-align:middle;
+}
 
 .multiselect-count {
 	position: relative;
 	text-align: center;
 	border-radius: 2px;
 	background-color: lightblue;
-	display: inline-block !important;
+	display: none !important;
 	padding: 2px 7px;
 	left: -45px;
 }
