@@ -188,7 +188,8 @@
 .custom_input4:checked ~ .custom_label4,
 .custom_input5:checked ~ .custom_label5,
 .custom_input6:checked ~ .custom_label6,
-.custom_input7:checked ~ .custom_label7{
+.custom_input7:checked ~ .custom_label7,
+.checkout_head{
     background-color: #ff6347;
     color: #fff;
 }
@@ -412,4 +413,23 @@
 .help_text:hover{
     color: #ff6347;
     transition: .4s;
+}
+
+
+/* Checkout page start */
+.checkout_head{
+    border-radius: 23px 23px 0 0;
+}
+
+.checkout_head img{
+    width: 11%;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.checkout_head h5{
+    margin: 0px 0 0 85px;
+}
+
+.ckeckout_body p{
+    line-height: 12px;
 }
