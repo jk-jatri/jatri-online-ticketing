@@ -7,6 +7,11 @@ const selectPlc = document.querySelector('.selectPlc');
 const selectDest = document.querySelector('.selectDest');
 const selectDate = document.querySelector('.selectDate');
 const srcBtn = document.querySelector('.srcBtn');
+const fltr = document.querySelector('.fltr');
+const ac = document.querySelector('.ac');
+const nac = document.querySelector('.nac');
+const bothac = document.querySelector('.bothac');
+const bdt = document.querySelector('.bdt');
 
 link.forEach(el => {
     el.addEventListener('click', () => {
@@ -21,6 +26,11 @@ link.forEach(el => {
         selectDest.textContent = data[attr].selectDest;
         selectDate.textContent = data[attr].selectDate;
         srcBtn.textContent = data[attr].srcBtn;
+        fltr.textContent = data[attr].fltr;
+        ac.textContent = data[attr].ac;
+        nac.textContent = data[attr].nac; 
+        bothac.textContent = data[attr].bothac;
+        bdt.textContent = data[attr].bdt;
     });
 });
 
@@ -33,6 +43,11 @@ var data = {
         "selectDest": "Select Your Destination",
         "selectDate": "Select Date",
         "srcBtn": "Search",
+        "fltr": "Filter",
+        "ac": "Ac",
+        "nac": "Non-Ac",
+        "bothac": "Both",
+        "bdt": "BDT",
     },
 
     "bengali": 
@@ -43,5 +58,10 @@ var data = {
         "selectDest": "গন্তব্য নির্বাচন করুন",
         "selectDate": "তারিখ নির্বাচন করুন",
         "srcBtn": "খুঁজুন",
+        "fltr": "ফিল্টার",
+        "ac": "এসি",
+        "nac": "নন-এসি",
+        "bothac": "দুটোই",
+        "bdt": "টাকা",
     }
 }
