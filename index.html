@@ -35,7 +35,11 @@
                                 <i class="fas fa-bus"></i> Bus
                             </div>
                         </div>
-                        <button class="rounded-pill search_btn px-5 py-2" onclick="location.href='login.html'"> Login </button>
+                        <div class="langWrap">
+                            <a href="#" language='english' class="active">ENGLISH</a>
+                            <a href="#" language='bengali'>বাংলা</a>
+                        </div>
+                        <button class="rounded-pill search_btn login_btn px-5 py-2" onclick="location.href='login.html'"> Login </button>
                     </div>
                 </div>
             </nav>
@@ -45,7 +49,7 @@
                     <div class="col-md-2">
                         <div class="banner_content_menu d-flex justify-content-center align-items-center">
                             <div class="single_vehicle">
-                                <i class="fas fa-bus"></i> Bus
+                                <i class="fas fa-bus"></i> <span class="vehicleName">Bus</span>
                             </div>
                         </div>
                     </div>
@@ -57,7 +61,7 @@
                                 <div class="col-md">
                                     <div class="form-floating">
                                         <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
-                                            <option selected>Select Your place</option>
+                                            <option selected class="selectPlc">Select Your place</option>
                                             <option value="1">Dhaka</option>
                                             <option value="2">Mymensingh</option>
                                             <option value="3">Tangail</option>
@@ -68,7 +72,7 @@
                                 <div class="col-md">
                                     <div class="form-floating">
                                         <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
-                                            <option selected>Select Your Destination</option>
+                                            <option selected class="selectDest">Select Your Destination</option>
                                             <option value="1">Dhaka</option>
                                             <option value="2">Mymensingh</option>
                                             <option value="3">Tangail</option>
@@ -79,8 +83,8 @@
                                 <div class="col-md">
                                     <div class="form-floating">
                                         <div class="form-control" id="floatingSelected" aria-label="Floating label select example">
-                                            <input type="date" id="date_select" hidden/>
-                                            <label for="date_select">select date</label>
+                                            <input type="date" id="date_select" hidden="true"/>
+                                            <label for="date_select" class="selectDate">select date</label>
                                         </div>
                                         <label for="floatingSelectGrid">Journey Date</label>
                                     </div>
@@ -92,7 +96,7 @@
                 <div class="d-flex justify-content-center">
                     <div class="col-md-2">
                         <div class="banner_content_btn d-flex justify-content-center align-items-center">
-                            <button class="search_btn">Search</button>
+                            <button class="search_btn srcBtn">Search</button>
                         </div>
                     </div>
                 </div>
@@ -348,16 +352,9 @@
                                                                     <div class="seat_column">
                                                                         <div class="bus_seat">L1</div>
                                                                         <div class="bus_seat">L2</div>
-                                                                        <div class="hidden_seat"></div>
                                                                         <div class="bus_seat">L3</div>
                                                                         <div class="bus_seat">L4</div>
-                                                                    </div>
-                                                                    <div class="seat_column">
-                                                                        <div class="bus_seat">M1</div>
-                                                                        <div class="bus_seat">M2</div>
-                                                                        <div class="bus_seat">M3</div>
-                                                                        <div class="bus_seat">M4</div>
-                                                                        <div class="bus_seat">M5</div>
+                                                                        <div class="bus_seat">L5</div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -421,6 +418,7 @@
     </body>
     <!-- javascript and jquery -->
     <script src="js/app.js"></script>
+    <script src="js/language.js"></script>
     <script src="js/priceRange.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
