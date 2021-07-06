@@ -433,3 +433,13 @@
 .ckeckout_body p{
     line-height: 12px;
 }
+
+/* langwrap */
+
+.langWrap a{
+    text-decoration: none;
+    background-color: #FF6347;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
